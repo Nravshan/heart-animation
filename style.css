@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(7, 7, 20);
+    gap:80px
+}
+.heart1{
+    background: #000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    animation: saxtash 3s infinite 600ms;
+    margin-right: 20px; 
+}
+.heart1::before,
+.heart1::after {
+    content: "";
+    background: #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: saxtash 3s infinite 600ms;
+    margin-right: 20px;
+}
+.heart1:before{
+    top: -50px;
+    left: 0;
+    animation: saxtash 3s infinite 600ms;
+}
+.heart1::after{
+    left: 50px;
+    top: 0;
+    animation: saxtash 3s infinite 600ms;
+    /* margin-right: 20px;  */
+}
+.heart2{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    animation: gandew 3s infinite 600ms;
+    margin-right: 10px; 
+}
+.heart2::before,
+.heart2::after {
+    content: "";
+    background: #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: gandew 3s infinite 600ms;
+}
+
+.heart2:before{
+    top: -50px;
+    left: 0;
+    animation: gandew 3s infinite 600ms;
+    margin-right: 10px;
+}
+.heart2::after{
+    left: 50px;
+    top: 0;
+    animation: gandew 3s infinite 600ms;
+    
+}
+.heart3{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    animation: mowniy 3s infinite 600ms;
+    margin-right: 10px; 
+}
+.heart3::before,
+.heart3::after {
+    content: "";
+    background: #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: mowniy 3s infinite 600ms;
+}
+
+.heart3:before{
+    top: -50px;
+    left: 0;
+    animation: mowniy 3s infinite 600ms;
+    margin-right: 10px;
+}
+.heart3:after{
+    left: 50px;
+    top: 0;
+    animation: mowniy 3s infinite 600ms;
+}
+@keyframes saxtash{
+
+    0%{
+        margin-right: 0px;
+        background-color:red;
+        transform: rotate(-45deg)
+    }
+    50%{
+        margin: right 0.9%;
+        background-color: black;
+        transform: rotate(-45deg);
+        
+    }
+    100%{
+        margin-right: 0px;
+        background-color:red;
+        transform: rotate(-45deg)
+    }
+}
+@keyframes gandew{
+
+    0%{
+        margin-right: 0px;
+        background-color: red;
+        transform: rotate(-45deg)
+    }
+    50%{
+        margin-right:0%;
+        background-color: black;
+        transform: rotate(-45deg);
+        
+    }
+    100%{
+        margin-right: 0px;
+        background-color: red;
+        transform: rotate(-45deg)
+    }
+}
+@keyframes mowniy{
+
+    0%{
+        margin-right: 0px;
+        background-color: red;
+        transform: rotate(-45deg)
+    }
+    50%{
+        margin-right:69%;
+        background-color: black;
+        transform: rotate(-45deg);
+        
+    }
+    100%{
+        margin-right: 0px;
+        background-color: red;
+        transform: rotate(-45deg)
+    }
+}
+
+
